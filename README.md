@@ -1,6 +1,6 @@
 <div align = "center">
 
-<img src = "imgs/study_icon.png" width = "256px">
+<img src = "imgsForDescription/study_icon.png" width = "256px">
 
 # BaekJoon-Study (*백준 스터디)
 
@@ -31,7 +31,7 @@
 * **매주 최소 한 문제씩** 풀어 **소스코드를 각자의 폴더 안에 업로드(커밋)** 합니다
   - ##### 문제는 각자의 수준에 맞는 문제를 풀며, 본인이 너무 쉽다고 느끼거나, 시간적 여유가 있으면 더 많이 풉니다)
   - ##### 파일을 커밋할 때, 제목을 해당 파일의 업로드 날짜로 합니다 (아래 사진 참고)
-     <img src = "imgs/guide1.png" width = "300px">
+     <img src = "imgsForDescription/guide1.png" width = "300px">
 
 
 - **프로그래밍 언어**는 자신이 **선호하는 언어**로 사용합니다
