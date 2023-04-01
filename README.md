@@ -21,13 +21,9 @@
 <div align = "center">
 
 |ABER1047|lhetl|VIichan16|igottoomany|
-
 |---|---|---|---|
-
 |<img src = "https://avatars.githubusercontent.com/u/78880883?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/93638355?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/126052997?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/52478336?v=4" width = "100px">|
-
 |<a href = "https://github.com/ABER1047">Github</a>|<a href = "https://github.com/lhetl">Github</a>|<a href = "https://github.com/VIichan16">Github</a>|<a href = "https://github.com/igottoomany">Github</a>|
-
 |스터디장|멤버|멤버|멤버|
 
 </div>
