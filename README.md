@@ -1,6 +1,6 @@
 <div align = "center">
 
-![study_icon](study_icon.png)
+<img src = "study_icon.png" width = "256px">
 
 # BaekJoon-Study
 
