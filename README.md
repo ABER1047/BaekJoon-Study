@@ -2,7 +2,7 @@
 
 <img src = "imgs/study_icon.png" width = "256px">
 
-# BaekJoon-Study
+# BaekJoon-Study (*백준 스터디)
 
 </br></br></br>
 
