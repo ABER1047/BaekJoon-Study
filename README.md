@@ -12,7 +12,7 @@
 
 </br></br></br>
 
-## 💬참여 인원 
+## 💬Contributors
 
 <div align = "center">
 
