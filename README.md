@@ -8,18 +8,26 @@
 
 ### 👋About
 
-- 백준 알고리즘 스터디용 찻집
+- 백준 알고리즘 스터디용 레포지토리입니다
+- 같은 대학 뿐만 아니라 타 대학과 함께 교류하여 스터디를 진행합니다
+
 
 </br></br></br>
 
-## 💬참여 인원 
+## 💬Contributors
 
 <div align = "center">
 
-|ABER1047|lhetl|VIichan16|igottoomany|MS-dino|Calmspace24|
-|---|---|---|---|---|---|
-|<img src = "https://avatars.githubusercontent.com/u/78880883?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/93638355?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/126052997?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/52478336?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/129666447?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/98307446?v=4" width = "100px">
-|<a href = "https://github.com/ABER1047">Github</a>|<a href = "https://github.com/lhetl">Github</a>|<a href = "https://github.com/VIichan16">Github</a>|<a href = "https://github.com/igottoomany">Github</a>|<a href = "https://github.com/MS-dino">Github</a>|<a href = "https://github.com/Calmspace24">Github</a>|
+|ABER1047|lhetl|VIichan16|igottoomany|
+|---|---|---|---|
+|<img src = "https://avatars.githubusercontent.com/u/78880883?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/93638355?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/126052997?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/52478336?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/129666447?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/98307446?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/81503599?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/129722641?v=4" width = "100px">|
+|<a href = "https://github.com/ABER1047">Github</a>|<a href = "https://github.com/lhetl">Github</a>|<a href = "https://github.com/VIichan16">Github</a>|<a href = "https://github.com/igottoomany">Github</a>|<a href = "https://github.com/MS-dino">Github</a>|<a href = "https://github.com/Calmspace24">Github</a>|<a href = "https://github.com/APSODE">Github</a>|<a href = "https://github.com/hyewon0310">Github</a>|
+
+
+|MS-dino|Calmspace24|APSODE|hyewon0310|
+|---|---|---|---|
+|<img src = "https://avatars.githubusercontent.com/u/129666447?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/98307446?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/81503599?v=4" width = "100px">|<img src = "https://avatars.githubusercontent.com/u/129722641?v=4" width = "100px">|
+|<a href = "https://github.com/MS-dino">Github</a>|<a href = "https://github.com/Calmspace24">Github</a>|<a href = "https://github.com/APSODE">Github</a>|<a href = "https://github.com/hyewon0310">Github</a>|
 
 
 </div></br></br></br>
