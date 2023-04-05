@@ -4,7 +4,7 @@ import java.util.*;
 //2023 고려대학교x연세대학교 프로그래밍 경시대회 Open Contest
 //https://www.acmicpc.net/contest/problem/981/1
 public class Korea_Yonsei_Univ_ProblemA
-{
+{   
     public static void main(String[] args)
     {
         char korea_str[] = {'K','O','R','E','A'};
