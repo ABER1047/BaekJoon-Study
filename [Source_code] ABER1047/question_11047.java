@@ -19,19 +19,23 @@ public class question_11047
         }
         
         
-        do
+
+        for(i = n-1; i >= 0; i--)
         {
-            for(i = n; i > 0; i--)
+            while(true)
             {
-                if (value_array[i] <= target_value)
+                if (value_array[i] <= target_value && target_value != 0)
                 {
                     target_value -= value_array[i];
                     ans ++;
+                }
+                else
+                {
                     break;
                 }
             }
-        } while(target_value == 0);
-        
+        }
+
         
         bw.write(ans+"\n");
         bw.flush();
