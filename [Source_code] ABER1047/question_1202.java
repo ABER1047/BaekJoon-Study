@@ -57,7 +57,8 @@ public class question_1202
         bw.flush();
     }
 
-    static class jewel_info implements Comparable<jewel_info> {
+    static class jewel_info implements Comparable<jewel_info> 
+    {
         int weight, value;
 
         public jewel_info(int weight, int value) 
