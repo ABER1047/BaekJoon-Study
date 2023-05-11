@@ -3,8 +3,7 @@ import java.util.*;
 
 public class question_2583
 {
-    static ArrayList<Integer> ans_candidate = new ArrayList<Integer>();
-    static int n = 0, m = 0;
+    static int n = 0, m = 0, k = 0, area = 0, divided_area_num = 0;
     
     
     public static void main(String[] args) throws IOException
@@ -13,44 +12,90 @@ public class question_2583
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
         String[] str1 = br.readLine().split(" ");
-        n = Integer.parseInt(str1[0]);
-        m = Integer.parseInt(str1[1]);
+        m = Integer.parseInt(str1[0]);
+        n = Integer.parseInt(str1[1]);
+        k = Integer.parseInt(str1[2]);
         
-        //n = 세로줄, m = 가로줄
+        ArrayList<Integer> ans_area = new ArrayList<Integer>();
+        
+        //m = 세로줄, n = 가로줄
         int map_array[][] = new int[m][n];
         
-        for(int i = 0; i < n; i++)
+
+        
+        //맵 생성
+        for(int j = 0; j < k; j++)
         {
-            String[] str2 = br.readLine().split("");
-            for(int ii = 0; ii < m; ii++)
+            String[] str2 = br.readLine().split(" ");
+            int start_xx = Integer.parseInt(str2[0]);
+            int start_yy = Integer.parseInt(str2[1]);
+            int end_xx = Integer.parseInt(str2[2]);
+            int end_yy = Integer.parseInt(str2[3]);
+            
+            for(int i = start_yy; i < end_yy; i++)
             {
-                map_array[ii][i] = Integer.parseInt(str2[ii]);
+                for(int ii = start_xx; ii < end_xx; ii++)
+                {
+                    map_array[i][ii] = 1;
+                }
             }
         }
+
         
-        //첫번째 시작 지점은 직접 지나왔다고 해줬음
-        dfs(map_array, 0, 0, 1);
         
+        //분리된 영역 갯수 구하기
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = 0; j < n; j++)
+            {
+                if (map_array[i][j] != 1)
+                {
+                    area ++;
+                    divided_area_num ++;
+                    //첫번째 시작 지점은 직접 지나왔다고 해줬음
+                    map_array[i][j] = 1;
+                    dfs_get_divided_area(map_array, j, i);
+                }
+                else
+                {
+                    if (area > 0)
+                    {
+                        ans_area.add(area);
+                        area = 0;
+                    }
+                }
+            }
+        }
+    
         
         //정렬
-		Collections.sort(ans_candidate);
-        
-        //정답 출력
-        bw.write(ans_candidate.get(0)+"\n");
+		Collections.sort(ans_area);
+        bw.write(divided_area_num+"\n");
+            //정답 출력
+            if (ans_area.size() == 0)
+            {
+                bw.write(0+"\n");
+            }
+            else
+            {
+                for(int i = 0; i < ans_area.size(); i++)
+                {
+                    bw.write(ans_area.get(i)+" ");
+                }
+            }
+        bw.write("\n");
         bw.flush();
     }
     
     
     
-    //dfs
-    static void dfs(int[][] map_array, int n_x, int n_y, int n_passed_num)
+    
+    //dfs to get divided area num
+    static void dfs_get_divided_area(int[][] map_array, int n_y, int n_x)
     {
-        int dx[] = {1,0,-1,0};
-        int dy[] = {0,1,0,-1}; //오른쪽, 아래, 왼쪽, 위 (시계 방향)
+        int[] dy = {0, 1, 0, -1};
+        int[] dx = {1, 0, -1, 0};
         
-        //지나간 길 표시
-        map_array[n_x][n_y] = 0;
-
         
         for(int i = 0; i < 4; i++)
         {
@@ -58,18 +103,13 @@ public class question_2583
             int xx = n_x+dx[i];
             int yy = n_y+dy[i];
             
-            if (xx >= 0 && yy >= 0 && xx < m && yy < n && map_array[xx][yy] != 0)
+            if (xx >= 0 && yy >= 0 && xx < n && yy < m && map_array[xx][yy] != 1)
             {
                 //가야되는 위치가 도착지점인 경우
-                if (xx == m-1 && yy == n-1)
-                {
-                    //지나간 길 표시에 대해
-                    ans_candidate.add(n_passed_num+1);
-                }
-                else
-                {
-                    dfs(map_array, xx, yy, n_passed_num+1);
-                }
+                //지나온 지점 표시
+                area ++;
+                map_array[xx][yy] = 1;
+                dfs_get_divided_area(map_array, xx, yy);
             }
         }
     }
