@@ -18,6 +18,9 @@ public class question_2740
                 array_1[ii][i] = sc.nextInt();
             }
         }
+        //  M M  행렬
+        //N
+        //N
         
         
         int M2 = sc.nextInt();
@@ -31,6 +34,10 @@ public class question_2740
                 array_2[ii][i] = sc.nextInt();
             }
         }
+        
+        //  K K  행렬
+        //M
+        //M
         
         
         for(int i = 0; i < N; i++)
@@ -48,3 +55,28 @@ public class question_2740
         }
     }
 }
+
+
+
+//   M M      
+// N
+// N
+//   K K
+// M
+// M
+
+// N -> K -> M
+
+// for(int i = 0; i < N; i++)
+// {
+//     for(int ii = 0; ii < K; ii++)
+//     {
+//         int sum = 0;
+//         for(int iii = 0; iii < M; iii++)
+//         {
+//         sum += arr1[i][iii]*arr2[iii][ii];
+//         }
+//         print
+//     }
+//     println
+// }
