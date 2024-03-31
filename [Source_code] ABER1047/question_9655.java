@@ -22,6 +22,7 @@ public class question_9655
             bw.write("SK");
         }
         
+        
         bw.write("\n");
         bw.flush();
     }    
