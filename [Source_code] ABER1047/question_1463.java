@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class question_17626 
+public class question_1463
 {
     public static void main(String[] args) throws IOException
     {
@@ -9,25 +9,31 @@ public class question_17626
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
         int target_num = Integer.parseInt(br.readLine());
-        int sqrt_target_num = (int) Math.sqrt(target_num);
-        int dp[] = new int[target_num];
+
+        int dp[] = new int[target_num+1];
         
-        
-        for(int i = 1; i <= sqrt_target_num; i++)
+        for(int i = 2; i <= target_num; i++)
         {
-            //dp값 저장
+            //1빼기
             dp[i] = dp[i-1]+1;
             
-            for(int ii = 1; ii*ii <= i; ii++)
+            //2로 나누어지는 경우
+            if (i%2 == 0)
             {
-                
+                dp[i] = Math.min(dp[i],dp[i/2]+1);
+            }
+            
+            if (i%3 == 0)
+            {
+                dp[i] = Math.min(dp[i],dp[i/3]+1);
             }
         }
         
         
         
         
-        bw.write("\n");
+        
+        bw.write(dp[target_num]+"\n");
         bw.flush();
     }
 }
