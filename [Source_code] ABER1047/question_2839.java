@@ -29,6 +29,7 @@ public class question_2839
         ans += left_kg/3;
         
         
+        
         bw.write(ans+"\n");
         bw.flush();
     }
