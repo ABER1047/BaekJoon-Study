@@ -26,7 +26,9 @@ public class question_15649
     
     public static void dfs(int depth) 
     {
-        if (depth == m) { // m개의 숫자를 모두 선택한 경우
+        // m개의 숫자를 모두 선택한 경우
+        if (depth == m) 
+        { 
             for (int i = 0; i < m; i++) 
             {
                 sb.append(arr[i]).append(' '); // 배열의 원소를 sb에 추가
@@ -37,7 +39,9 @@ public class question_15649
         
         for (int i = 0; i < n; i++) 
         {
-            if (!visited[i]) { // 방문하지 않은 숫자라면
+            // 방문하지 않은 숫자라면
+            if (!visited[i]) 
+            { 
                 visited[i] = true; // 방문 처리
                 arr[depth] = i + 1; // 현재 depth에 해당 숫자를 추가
                 dfs(depth + 1); // 다음 depth로 재귀 호출
